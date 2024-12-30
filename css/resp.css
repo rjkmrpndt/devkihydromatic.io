@@ -1,0 +1,80 @@
+/* Mobile Styles */
+@media only screen and (max-width: 991px){
+
+    /* navbar */
+.navbar{
+        flex-direction: column;
+        height: 275px;
+        transition: all 0.5s ease-out;
+    }
+.rightNav
+{
+    text-align: center;
+}
+.nav-list
+{
+    flex-direction: column;
+}
+.h-nav-resp
+{
+    height: 72px;
+}
+.v-class-resp
+{
+    opacity: 0;
+}
+#search
+{
+    width: 100%;
+}
+.burger{
+    display: block;
+}
+.logo
+{
+    width: 60%;
+}
+.clients-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+}
+.about-container p {
+    font-size: 30px; 
+}
+.ccontainer{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .ccontainer .content{
+    flex-direction: column-reverse;
+  }
+ .ccontainer .content .left-side{
+    width: 111%;
+    flex-direction: row;
+    margin-top: 0px;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+ .ccontainer .content .left-side::before{
+   display: none;
+ }
+ .ccontainer .content .right-side{
+        margin-bottom: -5px;
+        margin-left: -24px;
+        width: 92%;
+        margin-top: -37px;
+        border-left: none;
+    }
+ .content .left-side .details .text-one, .content .left-side .details .text-two {
+    font-size: 11px;
+    color: #000000;
+    /* font-weight: bold; */
+    font-family: 'Ubuntu', sans-serif;
+}
+}
+@media only screen and (max-width: 500px){
+
+.service-container h2{
+        padding-right: 420px;}
+.about-container p {
+        font-size: 25px; 
+}}
