@@ -143,7 +143,7 @@ body {
 }
 
 #home h1 {
-    font-size: 3.7rem;
+    font-size: 3rem;
     margin: 0; /* Removes default margin */
 }
 
@@ -154,16 +154,18 @@ body {
     height: 100vh;
     text-align: center;
     display: grid;
+    text-align: center;
+    justify-content: center ;
     place-items: center;
-    overflow: hidden;
+    overflow: auto;
     
 }
 
 .service-container {
     padding: 0px;
-    margin: 0px;
+    margin: 20px;
     width: 100%;
-    min-height: 100%;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,18 +173,19 @@ body {
 }
 .service-container h2{
     padding: 7% 0% 0% 0%;
-    text-align: center;
+    text-align: center; 
 }
 
 /* Product Slider */
 .product-slider {
-    max-width: 95%;
     margin: auto;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
 }
 
 .slider-container {
+    width: 95vw;
+    margin: 20px;
     display: flex;
     gap: 20px;
     overflow-x: auto;
@@ -192,7 +195,7 @@ body {
 
 /* Slider Item */
 .slider-item {
-    flex: 0 0 300px; /* Keep the size consistent for each item */
+    flex: 0 0 350px; /* Keep the size consistent for each item */
     scroll-snap-align: start;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -249,8 +252,8 @@ body {
 
   .certificate-container {
     padding: 0;
-    margin: 20px;
-    width: 100%;
+    margin: 0px;
+    width: 100vw;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -389,8 +392,7 @@ body {
 
 .about-container h2 {
     color: #ddd;
-    padding: 0% 14% 4% 15%;
-    margin: -14% 0% 0% 0%;
+     
 }
 
 .about-container p {
@@ -649,4 +651,57 @@ body {
 /* Hover Effect */
 .floating-icon:hover .icon-label {
     display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    /* Adjust the size and margins for tablets and small screens */
+    .floating-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 60px;
+    }
+
+    .icon-label {
+        font-size: 0.8rem;
+        bottom: 60px; /* Adjust label position for smaller screens */
+    }
+
+    .floating-icon.whatsapp {
+        margin-bottom: 100px;
+    }
+
+    .floating-icon.location {
+        margin-bottom: 50px;
+    }
+
+    .floating-icon.contact {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Further reduce icon size and adjust positioning for smaller devices like phones */
+    .floating-icon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 50px;
+    }
+
+    .icon-label {
+        font-size: 0.75rem;
+        bottom: 50px; /* Adjust label position for smaller screens */
+    }
+
+    .floating-icon.whatsapp {
+        margin-bottom: 95px;
+    }
+
+    .floating-icon.location {
+        margin-bottom: 48px;
+    }
+
+    .floating-icon.contact {
+        margin-bottom: 0px;
+    }
 }
