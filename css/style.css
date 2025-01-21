@@ -10,7 +10,6 @@ html{
 h2
 {
     font-size: 10vw;
-    margin-bottom: 30px;
     color: rgb(2, 21, 22);
     text-align: center;
 }
@@ -163,18 +162,18 @@ body {
 
 .service-container {
     padding: 0px;
-    margin: 20px;
+    margin: 0px;
     width: 100%;
-    max-height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: rgb(199, 197, 230);
 }
-.service-container h2{
+/*.service-container h2{
     padding: 7% 0% 0% 0%;
     text-align: center; 
-}
+}*/
 
 /* Product Slider */
 .product-slider {
