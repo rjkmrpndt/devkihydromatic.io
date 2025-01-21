@@ -329,7 +329,7 @@ body {
 }
 
 .clients-grid {
-    margin: 20px;
+    margin: 12px;
     display: grid;
     width: 95%;
     grid-template-columns: repeat(3, 1fr); /* 2 columns */
